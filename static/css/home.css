@@ -4,6 +4,7 @@
   height: calc(95vh - 69px);
   padding: 0rem;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 #heroImg {
