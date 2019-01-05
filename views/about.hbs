@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{pageTitle}}</title>
-  </head>
-  <body>
-    {{> header}}
-    <p>Some text here</p>
+{{> head}}
+{{> header}}
 
-    {{> footer}}
-  </body>
-</html>
+<div class='mainBody'>
+  <h1>{{title}}</h1>
+  <img class="heroImg" srcset="/images/computerCode-small.jpg 600w,
+                               /images/computerCode-medium.jpg  900w,
+                               /images/computerCode-large.jpg  1200w"
+                       sizes="(max-width: 600px) 550px,
+                               (max-width: 900px) 850px,
+                               1000px"
+                       src="/images/computerCode-large.jpg "
+                       alt="computer with code on the screen">
+</div>
+
+{{> footer}}

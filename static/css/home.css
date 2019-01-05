@@ -1,0 +1,134 @@
+.homeBody {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 69px);
+  padding: 0rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+#heroImg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-image: url("/images/computerCode-large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  opacity: 0.3;
+}
+
+.heroSection {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #44f3ff;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.heroText {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+}
+
+.homeMessage,
+.homeTitle {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.homeTitle {
+  font-size: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.homeMessage {
+  font-size: 2rem;
+}
+
+/*******  main body section  ***********/
+.homeSections {
+  margin: 10rem auto 2.5rem;
+  width: 100%;
+  max-width: 100rem;
+}
+
+.introText {
+  width: 80%;
+  margin: 15rem auto 10rem;
+  font-size: 2rem;
+  max-width: 90rem;
+}
+
+.sectiontext {
+  max-width: 95rem;
+  margin: 2rem auto;
+}
+
+.sectionHeader {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 2.5rem;
+}
+
+.sectionImg {
+  display: block;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0rem auto 4rem;
+}
+
+.textLinks {
+  color: #34a3ff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.seoAttribute {
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: #34a3ff;
+  transform: translate(0rem, -5rem);
+}
+
+.textLink {
+  border-bottom: 1px solid transparent;
+}
+
+.textLink:hover {
+  border-bottom: 1px solid #34a3ff;
+}
+/*******  Media Queries   ***********/
+
+/* adjust font size  */
+@media only screen and (min-width: 600px) {
+  .homeTitle {
+    font-size: 8vw;
+    padding: 2rem;
+  }
+
+  .homeMessage {
+    font-size: 3.5vw;
+  }
+}

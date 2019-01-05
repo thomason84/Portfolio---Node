@@ -1,8 +1,18 @@
 <header>
-  <div class="navBar" style="display: flex; -webkit-display: flex;">
-    <p style='margin: 5px;'><a href="/">Home</a></p>
-    <p style='margin: 5px;'><a href="/about">About</a></p>
-    <p style='margin: 5px;'><a href="/projects">Projects</a></p>
-  </div>
-  <h1>{{pageTitle}}</h1>
+  <navbar class="navBar" style="display: flex; -webkit-display: flex;">
+    <div id='navText'>
+      <p><a href="/">Home</a></p>
+      <p><a href="/about">About</a></p>
+      <p><a href="/projects">Projects</a></p>
+      <p><a href="/contact">Contact</a></p>
+      <p><a href="/files/StevenThomasonResume Dec 2018.pdf" download>Resume</a></p>
+    </div>
+    <div id='navIcons'>
+      <a href="/" class="navIcon fas fa-home"></a>
+      <a href="/about" class="navIcon fas fa-info-circle"></a>
+      <a href="/projects" class="navIcon fas fa-briefcase"></a>
+      <a href="/contact" class="navIcon fas fa-mobile-alt"></a>
+      <a href="https://registry.jsonresume.org/4cf4ce2f" class="navIcon far fa-file-alt"></a>
+    </div>
+  </navbar>
 </header>

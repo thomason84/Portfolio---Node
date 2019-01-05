@@ -1,0 +1,23 @@
+{{> head}}
+{{> header}}
+
+<div class='mainBody'>
+  <h1>{{title}}</h1>
+  <form action="https://formspree.io/thomason84@hotmail.com" method="POST">
+    <div class='input'>
+			<input id="formName" class="formName" type="text" name="name" placeholder="Name" required autofocus>
+      <label for='formName'>Name</label>
+    </div>
+		<div class='input'>
+      <input id='formEmail' class="formEmail" type="email" name="_replyto" placeholder="Email Address" required>
+      <label for='formEmail'>Email Address</label>
+    </div>
+		<div class='input textArea'>
+      <textarea id='formText' class="formText" name="message" placeholder="Message" required></textarea>
+      <label for='formText'>Message</label>
+    </div>
+    <input class="submitButton" type="submit" value="SUBMIT">
+	</form>
+</div>
+
+{{> footer}}

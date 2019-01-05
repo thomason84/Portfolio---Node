@@ -1,13 +1,99 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{pageTitle}}</title>
-  </head>
-  <body>
-    {{> header}}
-    <p>{{screamIt welcomeMessage}}</p>
+{{> head}}
+{{> header}}
 
-    {{> footer}}
-  </body>
-</html>
+<section class='homeBody'>
+  <div id="heroImg">
+  </div>
+  <div class="heroSection">
+  </div>
+  <div class="heroText">
+      <h1 class='homeTitle'>{{title}}</h1>
+      <p class='homeMessage'>{{screamIt welcomeMessage}}</p>
+  </div>
+</section>
+<div class='mainBody'>
+  <section class="introText homeSections">
+    <p>Hello, I am Steven Thomason.  A Web Developer that specializes in responsive web design, data analysis,
+    SEO, and other areas of business development. Thank you for visiting my website and if you have any questions
+   please feel free to contact me any time via one of the methods on the contact page.</p>
+  </section>
+  <section class="responsive homeSections">
+    <h2 class='sectionHeader'>Responsive Design and Development</h2>
+    <img class="sectionImg" srcset="/images/responsive-small.png 600w,
+                                 /images/responsive-medium.png  900w,
+                                 /images/responsive-large.png  1200w"
+                         sizes="(max-width: 600px) 550px,
+                                 (max-width: 900px) 850px,
+                                 1000px"
+                         src="/images/responsive-large.png "
+                         alt="example of responsive design showing same
+                              site on multiple devices">
+    <p class='sectiontext'>
+      Specializing in responsive "mobile first" design and development practices, I
+      strive to ensure each page I make is lightweight and feels at home on any size screen.
+    </p>
+    <p class='sectiontext'>
+      By incorporating .svg and other next gen graphic formats in conjunction with the img srcset
+      attribute I typically reduce a pages normal loads speeds by over 60%!  This is important
+      for all the landing pages where you might see an ad turned down due to excessive load time.
+    </p>
+  </section>
+  <section class="analytics homeSections">
+    <h2 class='sectionHeader'>Google Analytics</h2>
+    <img class="sectionImg" srcset="/images/analytics-small.jpg 600w,
+                                 /images/analytics-medium.jpg 900w,
+                                 /images/analytics-large.jpg 1200w"
+                         sizes="(max-width: 600px) 550px,
+                                 (max-width: 900px) 850px,
+                                 1000px"
+                         src="/images/analytics-large.jpg"
+                         alt="tablet with a screen shot of Google Analytics">
+    <p class='sectiontext'>
+       There is no other way to get to know your online clients better than Google
+       Analytics.  By observing and studing the incredible amount of information that
+       Google Analytics contains you can easily where your efforts are making great strides
+       and where they are coming back with weak, or negative, returns.
+    </p>
+    <p id='analyticsExp' class='sectiontext'>
+       My experience in adding, maintaining, and analyzing data to/from Google Analytics has
+       assisted in creating some of the best performing landing pages they have ever had. Before,
+       our average landing page had over 70% bounce rate and 75% exit rates; now both bounce and
+       exit rates are less than 50% with some being as low as 2%.
+    </p>
+    <p class='sectiontext'>
+       For more information, <span class='textLink'><strong><a id='askAnalytics' class='textLinks' href="/contact">Ask me how</a></strong></span> I can help you
+       understand your customer better today with Google Analytics.
+    </p>
+  </section>
+  <section class="homeSections">
+    <h2 class='sectionHeader'>Search Engine Optimization (SEO)</h2>
+
+    <img class="sectionImg" srcset="/images/seo-small.jpg 600w,
+                                 /images/seo-medium.jpg 900w,
+                                 /images/seo-large.jpg 1200w"
+                         sizes="(max-width: 600px) 550px,
+                                 (max-width: 900px) 850px,
+                                 1000px"
+                         src="/images/seo-large.jpg"
+                         alt="scatterplot of seo related terms">
+    <a class='seoAttribute' href="https://www.welkin.com.hk/courses/seo/"><span class='textLink'>Image via welkin</span></a>
+    <div class='seoTextDiv'>
+      <p class='sectiontext'>
+        SEO, everyone wants it but few know how to properly execute it.  There is no secret
+        formula, but there are methods and tricks that are proven to increase impressions and
+        untimately increase profits.
+      </p>
+      <p id='seoExp' class='sectiontext'>
+        By utilizing Google Search Console and Google Analytics at my current company, I was able to raise our viewable
+        impressions by over 70% which resulted in an increase in profits of 51%!  Everyone can do
+        this, no programming experience required.
+      </p>
+      <p class='sectiontext'>
+        <span class='textLink'><strong><a id='askSeo' class='textLinks' href="/contact">Contact me today</a></strong></span> to learn more about increasing
+        your companys profitability.
+      </p>
+    </div>
+  </section>
+</div>
+
+{{> footer}}
