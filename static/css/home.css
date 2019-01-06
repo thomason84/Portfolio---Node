@@ -115,6 +115,8 @@
 
 .textLink {
   border-bottom: 1px solid transparent;
+  color: #34a3ff;
+  font-weight: bold;
 }
 
 .textLink:hover {
