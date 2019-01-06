@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "grunt": "^1.0.3",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "preact-cli": "^2.2.1"
   },
   "devDependencies": {
     "grunt-build-control": "^0.7.1",
