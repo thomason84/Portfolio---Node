@@ -74,14 +74,23 @@
 
 .introText {
   width: 80%;
-  margin: 15rem auto 10rem;
+  margin: 0rem auto 10rem;
   font-size: 2rem;
   max-width: 90rem;
+}
+
+.homePage {
+  min-height: auto;
 }
 
 .sectiontext {
   max-width: 95rem;
   margin: 2rem auto;
+}
+
+.approach.sectiontext {
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .sectionHeader {
@@ -121,6 +130,15 @@
 
 .textLink:hover {
   border-bottom: 1px solid #34a3ff;
+}
+
+h1.additionalSkills {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.responsive.homeSections {
+  margin-top: 2rem;
 }
 /*******  Media Queries   ***********/
 
