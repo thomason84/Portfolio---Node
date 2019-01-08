@@ -40,6 +40,7 @@ hbs.registerHelper("screamIt", text => {
 
 app.get("/", (req, res) => {
   res.render("home.hbs", {
+    canonical: "https://portfolio-thomason.herokuapp.com/",
     title: "Steven Thomason",
     pageTitle: "Steven Thomason, Web Developer in Charleston, SC",
     metaDesc:
@@ -49,16 +50,18 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.render("about.hbs", {
-    title: "About Me",
-    pageTitle: "About Steven Thomason",
-    metaDesc:
-      "Learn about Steven Thomason, a local Web Developer in Charleston, SC."
-  });
+  canonical: "https://portfolio-thomason.herokuapp.com/about",
+    res.render("about.hbs", {
+      title: "About Me",
+      pageTitle: "About Steven Thomason",
+      metaDesc:
+        "Learn about Steven Thomason, a local Web Developer in Charleston, SC."
+    });
 });
 
 app.get("/projects", (req, res) => {
   res.render("projects.hbs", {
+    canonical: "https://portfolio-thomason.herokuapp.com/projects",
     title: "Projects",
     pageTitle: "Projects and relevant work examples from Steven Thomason",
     metaDesc:
@@ -68,9 +71,19 @@ app.get("/projects", (req, res) => {
 
 app.get("/contact", (req, res) => {
   res.render("contact.hbs", {
+    canonical: "https://portfolio-thomason.herokuapp.com/contact",
     title: "Contact Me",
     pageTitle: "Contact Steven Thomason",
     metaDesc: "Contact form used to contact Steven Thomason."
+  });
+});
+
+app.get("/resume", (req, res) => {
+  res.render("resume.hbs", {
+    canonical: "https://portfolio-thomason.herokuapp.com/resume",
+    title: "Resume",
+    pageTitle: "Steven Thomason Resume",
+    metaDesc: "Steven Thomasons most current resume."
   });
 });
 
