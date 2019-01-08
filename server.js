@@ -50,13 +50,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  canonical: "https://portfolio-thomason.herokuapp.com/about",
-    res.render("about.hbs", {
-      title: "About Me",
-      pageTitle: "Web Developer, SEO Specialist, and Web Analyst experience",
-      metaDesc:
-        "Learn about Steven Thomason, a local Web Developer in Charleston, SC. A Web Developer, SEO Specialist, and Web Analyst experience"
-    });
+  res.render("about.hbs", {
+    canonical: "https://portfolio-thomason.herokuapp.com/about",
+    title: "About Me",
+    pageTitle: "Web Developer, SEO Specialist, and Web Analyst experience",
+    metaDesc:
+      "Learn about Steven Thomason, a local Web Developer in Charleston, SC. A Web Developer, SEO Specialist, and Web Analyst experience"
+  });
 });
 
 app.get("/projects", (req, res) => {
