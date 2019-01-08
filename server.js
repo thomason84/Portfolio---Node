@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
   res.render("home.hbs", {
     canonical: "https://portfolio-thomason.herokuapp.com/",
     title: "Steven Thomason",
-    pageTitle: "Steven Thomason, Web Developer in Charleston, SC",
+    pageTitle: "Web Developer in Charleston, SC",
     metaDesc:
       "Web Developer located in Charleston, SC.  I specialize in Front End Design and Development with a focus on creating results producing SEO.",
     welcomeMessage: "Designer </> Developer"
@@ -53,9 +53,9 @@ app.get("/about", (req, res) => {
   canonical: "https://portfolio-thomason.herokuapp.com/about",
     res.render("about.hbs", {
       title: "About Me",
-      pageTitle: "About Steven Thomason",
+      pageTitle: "Web Developer, SEO Specialist, and Web Analyst experience",
       metaDesc:
-        "Learn about Steven Thomason, a local Web Developer in Charleston, SC."
+        "Learn about Steven Thomason, a local Web Developer in Charleston, SC. A Web Developer, SEO Specialist, and Web Analyst experience"
     });
 });
 
