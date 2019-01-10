@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+@font-face {
+  font-display: auto;
+}
+
 p,
 .sectionText {
   font-family: "Nunito Sans", sans-serif;
